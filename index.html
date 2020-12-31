@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify Web</title>
+  </head>
+  <body class="clearfix debug">
+    <script type="text/javascript">
+      alert('Tradurre in ITA?');
+    </script>
+    <header>
+      <div class="navbar float-l">
+        <div class="navbar-top">
+          <div class="flex-container">
+            <img class="logo visible" src="img/logo.svg" alt="logo Spotify">
+            <img class="hidden" src="img/logo-small.svg" alt="logo-small">
+
+            <ul class="menu-top bold-tiny-grey">
+              <li>
+                <img src="img/home.svg" alt="Home">
+                <span class="visible">Home</span>
+              </li>
+              <li>
+                <img src="img/search.svg" alt="Search">
+                <span class="visible">Cerca</span>
+              </li>
+              <li>
+                <img src="img/libreria.svg" alt="Libreria">
+                <span class="visible">La tua libreria</span>
+              </li>
+            </ul>
+
+            <h3 class="visible bold-md-white">PLAYLIST</h3>
+
+            <div class="add-playlist visible">
+              <div class="square relative">
+                <i class="fa fa-plus fa-lg absolute-center c-black" aria-hidden="true"></i>
+              </div>
+              <span class="bold-tiny-grey">Crea playlist</span>
+            </div>
+
+            <ul class="playlist-scroll visible bold-tiny-grey">
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navbar-bottom">
+          <div class="flex-container">
+            <div class="download ">
+              <img src="img/download.svg" alt="Icona download">
+              <span class="visible bold-tiny-grey">Installa app</span>
+            </div>
+            <hr>
+            <div class="profile ">
+              <div class="circle">
+                <img src="img/profile.svg" alt="foto profilo Spotify">
+              </div>
+
+              <span class="visible bold-md-white">Simone Pagotto</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+      <div class="music-box float-l relative">
+
+        <div class="fixed relative">
+            <button class="buttonEffettuaUpgrade bold-md-white" type="button" name="upgrade"><span class="bold-md-white">EFFETTUA UPGRADE</span></button>
+        </div>
+
+        <div class="menu">
+          <ul class="flex-container bold-md-grey">
+            <li>IN EVIDENZA<div class="line"></div></li>
+            <li>PODCAST<div class="line"></div></li>
+            <li>CLASSIFICHE<div class="line"></div></li>
+            <li>GENERI E MOOD<div class="line"></div></li>
+            <li>NUOVE USCITE<div class="line"></div></li>
+            <li>SCOPRI<div class="line"></div></li>
+          </ul>
+        </div>
+
+        <section class="recent">
+          <h2 id="translate-ita" class="bold-big-white">Recently played</h2>
+
+          <div class="flex-container core">
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/metal_lifting.jpg" alt="metal">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="name">
+                <h3 class="bold-white">Heavy Metal</h3>
+                <h5 class="bold-tiny-grey">Subtitle</h5>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/stranger.jpeg" alt="stranger things">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="name">
+                <h3 class="bold-white">Stranger Things, Vol.1 ( a Netfix Original Series Soundtrack)</h3>
+                <h5 class="bold-tiny-grey">Kyle Dixon & Micheal Stein</h5>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/aquietplace.jpeg" alt="a quiet place">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="name">
+                <h3 class="bold-white">A quiet place</h3>
+                <h5 class="bold-tiny-grey">Subtitle</h5>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/split.jpeg" alt="split">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="name">
+                <h3 class="bold-white">Split</h3>
+                <h5 class="bold-tiny-grey">Subtitle</h5>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/cure.jpeg" alt="a cure for wellness">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="name">
+                <h3 class="bold-white">A cure for wellness</h3>
+                <h5 class="bold-tiny-grey">Subtitle</h5>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/sinister.jpeg" alt="sinister">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="name">
+                <h3 class="bold-white">Sinister</h3>
+                <h5 class="bold-tiny-grey">Subtitle</h5>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/vulfpeck.jpg" alt="Vulfpeck">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="name">
+                <h3 class="bold-white">Vulfpeck</h3>
+                <h5 class="bold-tiny-grey">A Perfect Game</h5>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/melyourselfdown.jpg" alt="Melt Yourself Down">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="name">
+                <h3 class="bold-white">Melt Yourself Down</h3>
+                <h5 class="bold-tiny-grey">Fix My Life</h5>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/sonsofkemet.jpg" alt="Sons Of Kemet">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="name">
+                <h3 class="bold-white">Sons Of Kemet</h3>
+                <h5 class="bold-tiny-grey"> Lest We Forget What We Came Here To Do </h5>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+        <section class="create">
+          <h2 class="bold-big-white">Creato per Simone Pagotto</h2>
+          <h6 class="bold-tiny-grey">Più ascolti, più accurati saranno i suggerimenti.</h6>
+
+          <div class="flex-container core">
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/radar.jpeg" alt="radar">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <h3 class="bold-white" >Release Radar</h3>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/mixdaily.jpeg" alt="Daily Mix">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <h3 class="bold-white" >Daily Mix</h3>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <h2 class="bold-big-white">Artisti più popolari</h2>
+          <h6 class="bold-tiny-grey">Più ascolti, più accurati saranno i suggerimenti.</h6>
+
+          <div class="flex-container core">
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/youg.jpeg" alt="lana del rey">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <h3 class="bold-white" >Lana Del Rey</h3>
+            </div>
+
+            <div class="card">
+              <div class="img-container relative">
+                <img src="img/einaudi.jpeg" alt="einaudi">
+                <div class="overlay">
+                  <div class="play-icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <h3 class="bold-white" >Ludovico Einaudi</h3>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="music-bar float-l flex-container">
+        <div class="track-name">
+          <img src="img/sinister.jpeg" alt="sinister">
+          <div class="name">
+            <h4 class="bold-md-white">Sinister</h4>
+            <span class="bold-tiny-grey">Brano</span>
+            <span class="bold-tiny-grey">Nome</span>
+          </div>
+          <div class="action c-grey">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-folder-o" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="track-player">
+          <div class="flex-container">
+            <div class="icons c-grey">
+              <i class="fa fa-random fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-step-backward fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>
+              <i class="fa fa-step-forward fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-repeat fa-lg" aria-hidden="true"></i>
+
+            </div>
+            <div class="bar">
+              <h6 class="bold-tiny-white">0:25</h6>
+              <div class="line">
+                <div class="line-color">
+
+                </div>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+
+              </div>
+              <h6 class="bold-tiny-white">4:25</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-audio c-white">
+          <div class="icons">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <i class="fa fa-volume-down" aria-hidden="true"></i>
+          </div>
+
+          <div class="bar">
+            <div class="line">
+              <div class="line-color">
+
+              </div>
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </footer>
+  <!--script-->
+  <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
